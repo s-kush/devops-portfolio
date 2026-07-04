@@ -23,7 +23,8 @@
 
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects" id="projects-link">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -99,7 +100,7 @@
 
       <div class="stat">
         <h3>5000+</h3>
-        <p>Managed Environments</p>
+        <p>User Environments</p>
       </div>
 
       <div class="stat">
@@ -111,67 +112,134 @@
 
 </section>
 
-<section id="experience">
+<section id="experience" class="container">
+  <h2>Professional Experience</h2>
+
+  <p class="section-intro">
+  My transition from software engineering to designing and operating large-scale infrastructure,
+  platform engineering, and production systems.
+  </p>
+
+  <div class="timeline">
+
+    <article class="timeline-item">
+
+      <div class="timeline-period">
+        <span>2023</span>
+        <span>Present</span>
+      </div>
+
+      <div class="timeline-content">
+
+        <h3 class=timeline-title>
+          DevOps & Infrastructure Engineer
+          <span class="current-badge">Current</span>
+        </h3>
+
+        <h4>
+          Khush Technologies
+        </h4>
+
+        <p>
+        Leading infrastructure automation, platform engineering, and production operations across
+        multi-tenant Linux infrastructure. Responsible for provisioning, observability,
+        security, disaster recovery, cloud integration, and platform modernization.
+        </p>
+
+      </div>
+
+    </article>
+
+    <article class="timeline-item">
+
+      <div class="timeline-period">
+        <span>2021</span>
+        <span>2023</span>
+      </div>
+
+      <div class="timeline-content">
+
+        <h3>
+          Senior Programmer
+        </h3>
+
+        <h4>
+          Khush Technologies
+        </h4>
+
+        <p>
+        Expanded responsibilities from application development into infrastructure engineering
+        by introducing Docker-based deployments, automation tooling, provisioning workflows,
+        and Linux production operations.
+        </p>
+
+      </div>
+
+    </article>
+
+    <article class="timeline-item">
+
+      <div class="timeline-period">
+        <span>2019</span>
+        <span>2021</span>
+      </div>
+
+      <div class="timeline-content">
+
+        <h3>
+          Programmer
+        </h3>
+
+        <h4>
+          Khush Technologies
+        </h4>
+
+        <p>
+        Developed and maintained business applications while automating installation,
+        deployment, and customer onboarding workflows that later evolved into the
+        organization's DevOps platform.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
 
 </section>
 
 <section id="projects" class="container">
 
-    <h2>Featured Projects</h2>
+    <h2>Engineering Projects</h2>
 
     <p class="section-intro">
-        A selection of infrastructure platforms, automation systems and
-        engineering initiatives that reflect my day-to-day work in production
-        environments.
+    Production platforms and engineering systems I've designed, automated, and operated
+    across large-scale Linux infrastructure.
     </p>
 
-    <div class="project-grid">
-
-      <article class="project-card">
-
-        <div class="project-header">
-
-          <h3>Multi-Tenant Hosting Platform</h3>
-
-          <span class="project-type">
-            Production Infrastructure
-          </span>
-
-        </div>
-
-        <p class="project-description">
-        Built and operated a large-scale multi-tenant Linux hosting platform
-        spanning 50+ physical servers and supporting 5,000+ customer
-        environments. Focused on platform reliability, infrastructure
-        automation, operational efficiency, and production support.
-        </p>
-
-        <div class="project-tags">
-
-          <span>Linux</span>
-          <span>Bash</span>
-          <span>Docker</span>
-          <span>Nginx</span>
-          <span>Ansible</span>
-
-        </div>
-
-        <div class="project-footer">
-
-          <span class="project-note">
-            Production Experience
-          </span>
-
-        </div>
-
-      </article>
-
+    <div class="project-navigation">
+      <button id="project-prev" class="project-nav-btn">
+        ❮
+      </button>
+      <div id="project-tabs" class="project-tabs"></div>
+      <button id="project-next" class="project-nav-btn">
+        ❯
+      </button>
+    </div>
+    <div id="project-grid" class="project-grid">
     </div>
 
 </section>
 
 <section id="skills">
-
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <p class="skills-intro">
+      Technologies and platforms I've used to design, automate, secure, and operate production infrastructure.
+    </p>
+    <div class="skills-grid" id="skills-grid">
+    </div>
+  </div>
 </section>
 
 <section id="certifications">
@@ -179,14 +247,47 @@
 </section>
 
 <section id="contact">
+  <div class="container">
 
+    <h2>Let's Build Something Reliable</h2>
+
+    <p class="contact-intro">
+    I'm open to remote DevOps, Platform Engineering, Infrastructure Engineering,
+    and Site Reliability Engineering opportunities.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-item">
+        <span class="contact-label">Location</span>
+        <p>India · Remote Worldwide</p>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-label">Email</span>
+        <a href="mailto:santoshvkushwaha@gmail.com">
+          santoshvkushwaha@gmail.com
+        </a>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 </main>
 
 <footer>
-
+   <div class="container">
+     <p>Built with HTML, CSS and JavaScript.</p>
+    </div>
 </footer>
+
+<script src="js/projects-data.js"></script>
+<script src="js/projects.js"></script>
+
+<script src="js/skills-data.js"></script>
+<script src="js/skills.js"></script>
 
 <script src="js/script.js"></script>
 
